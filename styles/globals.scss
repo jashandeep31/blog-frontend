@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$pure-dark: #252525;
+$light-gray-color: #d6d6d6;
+
+// font
+$primary-font: "Gideon Roman", cursive;
+
+#Navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 10%;
+    border-bottom: 1px solid $light-gray-color;
+    align-items: center;
+    font-family: $primary-font;
+    .logo {
+        h1 {
+            font-size: 30px;
+        }
+    }
+    ul.menu {
+        display: flex;
+        column-gap: 20px;
+        font-weight: bold;
+        li.active {
+            border-bottom: 1px solid $pure-dark;
+        }
+    }
+}
